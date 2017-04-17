@@ -47,8 +47,6 @@ if(!$mail->send()) {
 }
 
 }
-
-
 // Set session variables to be used on profile.php page
 $_SESSION['email'] = $_POST['email'];
 $_SESSION['first_name'] = $_POST['firstname'];
@@ -89,8 +87,8 @@ else { // Email doesn't already exist in a database, proceed...
 
         // Send registration confirmation link (verify.php)
         $Sender = 'The tolietPaper Company';
-		$to      = $email;
-        $subject = 'Account Verification ( tolietPaperCompany.com )';
+        $to     = $email;
+        $subject = 'Account Verification ( toiletPaperCompany.com )';
         $message_body = '
         Hello '.$first_name.',
 
@@ -98,9 +96,9 @@ else { // Email doesn't already exist in a database, proceed...
 
         Please click this link to activate your account:
 
-        http://localhost/Login-System/verify.php?email='.$email.'&hash='.$hash;  
+        http://localhost/login-system/verify.php?email='.$email.'&hash='.$hash;  
 
-        sendMail($Sender, $to, $subject, $message_body );
+        sendMail($Sender, $to, $subject, $message_body);
 
         header("location: profile.php"); 
 
