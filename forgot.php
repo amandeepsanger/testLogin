@@ -1,7 +1,7 @@
 <?php 
 /* Reset your password form, sends reset.php password link */
-require 'db.php';
 session_start();
+require 'db.php';
 require 'PHPMailerAutoload.php';
 function sendMail($Sender,$Email,$Subject,$Message)
 {
