@@ -59,7 +59,7 @@ else {
           <h2><?php echo $first_name.' '.$last_name; ?></h2>
           <p><?= $email ?></p>
           
-          <a href="../toiletPaperCompany/index.php"><button class="button button-block" name="Continue"/>Continue</button></a>
+          <a href="../toiletPaperCompany/profile.php"><button class="button button-block" name="Continue"/>Continue</button></a>
           
     </div>
     
